@@ -38,4 +38,4 @@ while x!=0 and num!=0:
     num, x= map(int, input("").split(" "))
     if x!=0 and num!=0:
         buscarSpiral(x,num)
-
+#teste
