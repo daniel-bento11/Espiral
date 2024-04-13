@@ -39,3 +39,5 @@ while x!=0 and num!=0:
     if x!=0 and num!=0:
         buscarSpiral(x,num)
 
+#comentario teste
+
