@@ -14,7 +14,6 @@ def leituraArquivo(entradas):
                 # Converte os números para inteiros
                 num = int(numeros[0])
                 x = int(numeros[1])
-                print(num, x)
                 if x!=0 and num!=0:
                     buscarSpiral(x,num)
                 else:
