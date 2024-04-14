@@ -1,6 +1,25 @@
-x =1
+x = 1
 num = 1
+entradas = "entradas.txt"
 
+def leituraArquivo(entradas):
+    # Declara 'x' e 'num' como global 
+    #global x, num  
+    # Abre o arquivo em modo leitura
+    with open(entradas, 'r') as entradas:
+        for linha in entradas:
+            # Separa os números na linha
+            numeros = linha.split()
+            if len(numeros) == 2:
+                # Converte os números para inteiros
+                num = int(numeros[0])
+                x = int(numeros[1])
+                if x!=0 and num!=0:
+                    buscarSpiral(x,num)
+                else:
+                    break
+                                   
+        
 def createSpiral(num):
     mat = [[0 for x in range(num)] for x in range(num)]
     inicio = 0
@@ -26,18 +45,20 @@ def createSpiral(num):
 
 def buscarSpiral(x,num):
     mat = createSpiral(num)
-    for i  in range (len(mat)):
+    for i in range (len(mat)):
         if x in mat[i]:
             coluna = mat[i].index(x)+1
-            linha = i+1
-    print("linha: ", linha)
-    print("Coluna: ", coluna)
-    print()
-    
-while x!=0 and num!=0:
-    num, x= map(int, input("").split(" "))
-    if x!=0 and num!=0:
-        buscarSpiral(x,num)
-#teste
-#comentario teste
+            linha = num-i
+            print(f"Line = {linha} , column = {coluna}")
+            createOutput(linha, coluna)
+            
+            
+def createOutput(linha, coluna):
+    saidas = open('saidas.txt','a')
+    saidas.write(f"Line = {linha}, column = {coluna}.\n")
+
+
+leituraArquivo(entradas)
+
+
 
