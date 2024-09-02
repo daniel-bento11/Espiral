@@ -1,4 +1,4 @@
-# Espiral!
+# Espiral
 
 Desenvolvimento de uma espiral
 
@@ -9,7 +9,7 @@ Desenvolvimento de uma espiral
 ## 📄 Status
 
 <h3 align="center"> 
-[Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge)
+![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge)
 </h3>
 
 ## 📂 Instruções
