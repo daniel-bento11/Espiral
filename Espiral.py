@@ -3,15 +3,10 @@ num = 1
 entradas = "entradas.txt"
 
 def leituraArquivo(entradas):
-    # Declara 'x' e 'num' como global 
-    #global x, num  
-    # Abre o arquivo em modo leitura
     with open(entradas, 'r') as entradas:
         for linha in entradas:
-            # Separa os números na linha
             numeros = linha.split()
             if len(numeros) == 2:
-                # Converte os números para inteiros
                 num = int(numeros[0])
                 x = int(numeros[1])
                 if x!=0 and num!=0:
